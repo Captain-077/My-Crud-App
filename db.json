@@ -1,0 +1,24 @@
+{
+  "studentdetails": [
+    {
+      "id": "ad56",
+      "studentName": "nakul",
+      "studentEmail": "nakul@mail.com"
+    },
+    {
+      "id": "a262",
+      "studentName": "pawan",
+      "studentEmail": "pawan@mail.com"
+    },
+    {
+      "id": "ad56",
+      "studentName": "rishabh",
+      "studentEmail": "rishabh@mail.com"
+    },
+    {
+      "id": "a262",
+      "studentName": "Aniket",
+      "studentEmail": "aniket@mail.com"
+    }
+  ]
+}

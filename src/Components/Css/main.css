@@ -1,0 +1,555 @@
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.6em;
+    /* overflow: hidden; */
+
+}
+
+body{
+    overflow: hidden;
+}
+.App {
+    height: auto;
+}
+
+.active {
+    background-color: #7f4cce;
+    border: 1px solid #7f4cce !important;
+    
+}
+
+/* ------------------header--------------------------------- */
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 1em 0;
+    background-color: #212121;
+    margin-right: 3em;
+    margin-top: 5px;
+
+}
+
+.logo img {
+    margin-top: 5px;
+}
+
+
+.logo h1 {
+    margin-left: 0.3em;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    background-color: #212121;
+    padding: 0 4.8rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.navbar-list {
+    display: flex;
+    gap: 2.8rem;
+    list-style-type: none;
+}
+
+.navbar-list li a {
+    padding: 8px 20px;
+    border: 1px solid rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+.navbar-list li a:hover {
+    background-color: #7f4cce;
+    border: 1px solid #7f4cce;
+}
+
+.navbar-list li:hover a {
+    color: #fff;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.menu-cross{
+    display: none;
+}
+
+
+
+/* ------------------table--------------------------------- */
+.content-table {
+    border-collapse: collapse;
+    margin: 40px auto 0;
+    font-size: 0.9em;
+    min-width: 600px;
+    text-align: left;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead th {
+    background-color: #7f4cce;
+    color: white;
+    font-weight: bold;
+}
+
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+
+
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #7f4cce;
+}
+
+/* 
+.content-table tbody tr:hover {
+    color: #E03526;
+} 
+*/
+
+/* ------------------Add new form--------------------------------- */
+
+.AddForm {
+    margin: 40px auto 15px;
+    max-width: 300px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.title {
+    background-color: #7f4cce;
+    padding: 0.5em;
+    color: #fff;
+}
+
+.AddForm form {
+    padding: 1.2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.AddForm form input {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #efefef;
+    margin-bottom: 1.2em;
+    font-size: 13px;
+}
+
+.AddForm form button {
+    display: inline-block;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #7f4cce;
+    border: 2px solid #7f4cce;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+
+
+.AddForm form button:hover {
+
+    background-color: #7f4cce;
+    color: #ffffff;
+    border-color: #009879;
+}
+
+
+.backToStudent {
+    display: inline-block;
+    margin-right: 15.5em;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #706e6e;
+    border: none;
+    cursor: pointer;
+}
+
+
+.backToStudent:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* ------------------footer--------------------------------- */
+
+.footer {
+    background-color: #212121;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: 88.2%;
+    font-size: 14px;
+    width: 100%;
+}
+
+
+/* ------------------ErrorPage--------------------------------- */
+
+.ErrorComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+
+/* ------------------HomePage--------------------------------- */
+
+.Main-banner {
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    padding: 80px 80px;
+}
+
+.banner-image {
+    background-image: url('../../../public/banner3.png');
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: top center;
+    width: 100%;
+    height: auto;
+}
+
+.banner-content {
+    align-self: center;
+    text-align: left;
+    max-width: 50%;
+}
+
+.banner-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: bolder;
+}
+
+.banner-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #4c4c4c;
+}
+
+.banner-content span {
+    color: #ebbc3b;
+}
+
+.banner-content button {
+    padding: 7px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: #7f4cce;
+
+    border: 1px solid #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.banner-content button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.banner-content button:hover a {
+    color: #7f4cce;
+}
+
+.banner-content button:hover {
+    background-color: #fff;
+    border: 1px solid #7f4cce;
+}
+
+
+
+
+
+/* ------------------Medium~Screens--------------------------------- */
+
+@media screen and (max-width: 1024px) {
+    .Main-banner {
+        height: 55vh;
+        background-size: 50%;
+    }
+
+    .footer {
+        top: 65%;
+    }
+
+    .logo {
+        margin-top: 0px;
+    }
+
+    .navbar ul li {
+
+        margin-top: 0em;
+
+    }
+
+}
+
+
+/* ------------------Tablet~Screens--------------------------------- */
+
+
+
+@media screen and (max-width: 800px) {
+
+
+    .Main-banner {
+        height: 40vh;
+        background-size: 55%;
+    }
+
+    .banner-content {
+        max-width: 50%;
+    }
+
+    .footer {
+        top: 50%;
+    }
+
+    .logo {
+        margin-top: 0px;
+    }
+
+    .navbar ul li {
+
+        margin-top: 0em;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------below~998px--------------------------------- */
+
+
+@media screen and (max-width: 998px) {
+
+    .header{
+        position: relative;
+    }
+    
+    .navbar {
+       display: none;
+    }
+    .navbarT{
+        width: 50%;
+        height: 80vh;
+        background-color: #fefefef9;
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.37);
+        position: absolute;
+        top:0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        transition: all 0.5s linear;
+    }
+   
+    .navbar-list{
+       flex-direction: column;
+       text-align: center;
+       margin-top:10rem;
+    }
+
+    .navbar-list li a {
+        padding: 8px 50px;
+        border: 1px solid #212121;
+        font-size: 18px;
+        color: #212121;
+        
+    }
+
+   
+
+
+    .active{
+        color:#fff !important;
+    }
+    .hamburger-menu {
+        display: block;
+        z-index: 999;
+
+        a {
+            color: rgb(164, 158, 158);
+            font-size: 30px;
+            
+        }
+    }
+
+   
+
+
+   
+
+    .mobile-menu-link {}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------mobile~Screens~320px--------------------------------- */
+
+@media screen and (max-width: 320px) {
+
+
+
+
+
+    .navbarT{
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .logo h1 {
+        margin-left: 0.5em;
+        font-size: 1.4em;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .navbar ul li {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .Main-banner {
+        background-size: 100%;
+        background-position: top;
+        width: 90%;
+        height: auto;
+        flex-direction: row;
+    }
+
+
+    .banner-image {
+        margin-top: 1200px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: absolute;
+        top: 150%;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .banner-content {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .banner-content h1 {
+        font-size: 3em;
+        line-height: 1.2;
+    }
+
+    .banner-content button {
+        width: 100%;
+    }
+
+}
