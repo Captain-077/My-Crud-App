@@ -31,6 +31,7 @@ function AddNew() {
 
 
   }
+  // a function
   const handleClick = () => {
     Navigate('/list')
   }
