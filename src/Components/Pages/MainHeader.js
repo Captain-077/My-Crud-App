@@ -7,8 +7,9 @@ function MainHeader() {
   return (
     <>
       <Header />
-      <Footer/>
       <Outlet/>
+      <Footer/>
+      
     </>
   )
 }
