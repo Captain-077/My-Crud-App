@@ -13,7 +13,7 @@ function ListDetails() {
 
 
     try {
-      const getData = await axios.get(`http://localhost:3333/studentdetails`)
+      const getData = await axios.get(`https://captain-json-server.onrender.com/studentdetails`)
       console.log(getData)
       setData(getData.data)
     }
@@ -33,7 +33,7 @@ function ListDetails() {
 
   const handleDelete = async (getID) => {
     
-    const getResult = await axios.delete(`http://localhost:3333/studentdetails/${getID}`)
+    const getResult = await axios.delete(`https://captain-json-server.onrender.com/studentdetails/${getID}`)
     console.log(getResult);
     console.log(getID);
     getAPIdata()

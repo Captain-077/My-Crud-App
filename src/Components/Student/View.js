@@ -10,7 +10,7 @@ function View() {
     const getViewData = async () => {
 
         try {
-            const getdata = await axios.get(`http://localhost:3333/studentdetails/${id}`)
+            const getdata = await axios.get(`https://captain-json-server.onrender.com/studentdetails/${id}`)
             setdata(getdata.data)
            
         }

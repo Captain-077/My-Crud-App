@@ -21,7 +21,7 @@ function AddNew() {
   const formSubmit = async (e) => {
     e.preventDefault()
     try {
-      const getPost = await axios.post("http://localhost:3333/studentdetails", data)
+      const getPost = await axios.post("https://captain-json-server.onrender.com/studentdetails", data)
       console.log(getPost.data)
       console.log(data)
     }

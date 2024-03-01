@@ -20,7 +20,7 @@ function Edit() {
 
         try {
             const fetchSelectedAPI = async () => {
-                const getPostResult = await axios.get(`http://localhost:3333/studentdetails/${id}`)
+                const getPostResult = await axios.get(`https://captain-json-server.onrender.com/studentdetails/${id}`)
                 setEdit(getPostResult.data)
             }
             fetchSelectedAPI()
@@ -45,7 +45,7 @@ function Edit() {
 
         try {
             e.preventDefault()
-            const updatePostResult = await axios.put(`http://localhost:3333/studentdetails/${id}`, edit)
+            const updatePostResult = await axios.put(`https://captain-json-server.onrender.com/studentdetails/${id}`, edit)
         }
         catch (error) {
             console.log(error)
