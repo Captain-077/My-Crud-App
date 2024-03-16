@@ -42,8 +42,8 @@ function ListDetails() {
   return (
     <>
   
-    <div>
-      <table className='content-table' >
+    <div className='table-continer'>
+      <table className='table' >
         <thead>
 
           <tr style={{}}>

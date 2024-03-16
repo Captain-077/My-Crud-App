@@ -88,40 +88,46 @@ body{
 
 
 /* ------------------table--------------------------------- */
-.content-table {
+
+.table-continer{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.table {
     border-collapse: collapse;
+    overflow:hidden;
     margin: 40px auto 0;
     font-size: 0.9em;
     min-width: 600px;
     text-align: left;
     border-radius: 5px 5px 0 0;
-    overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.content-table thead th {
+.table thead th {
     background-color: #7f4cce;
     color: white;
     font-weight: bold;
 }
 
 
-.content-table th,
-.content-table td {
+.table th,
+.table td {
     padding: 12px 15px;
 
 
 }
 
-.content-table tbody tr {
+.table tbody tr {
     border-bottom: 1px solid #dddddd;
 }
 
-.content-table tbody tr:nth-of-type(even) {
+.table tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
 }
 
-.content-table tbody tr:last-of-type {
+.table tbody tr:last-of-type {
     border-bottom: 2px solid #7f4cce;
 }
 
@@ -241,15 +247,17 @@ body{
     display: flex;
     justify-content: space-around;
     height: 80vh;
-    padding: 80px 80px;
+    padding: 0px 20px;
+    box-sizing: border-box; /* Include padding in total width */
 }
 
 .banner-image {
     background-image: url('../../../public/banner3.png');
     background-repeat: no-repeat;
-    background-size: 65%;
-    background-position: top center;
-    width: 100%;
+    background-size: contain; /* Adjust background size for responsiveness */
+    background-position: center; /* Center the background */
+    width: 50%;
+    max-width: 400px; /* Add a max-width for smaller screens */
     height: auto;
 }
 
@@ -260,16 +268,16 @@ body{
 }
 
 .banner-content h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 10px;
     line-height: 1.4;
     font-weight: bolder;
 }
 
 .banner-content p {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #4c4c4c;
 }
 
@@ -278,11 +286,10 @@ body{
 }
 
 .banner-content button {
-    padding: 7px 30px;
-    font-size: 1.2em;
+    padding: 10px 20px;
+    font-size: 1em;
     text-decoration: none;
     background-color: #7f4cce;
-
     border: 1px solid #fff;
     border-radius: 30px;
     cursor: pointer;
@@ -319,55 +326,8 @@ body{
 
 @media screen and (max-width: 1024px) {
     .Main-banner {
-        height: 55vh;
+        height: 80vh;
         background-size: 50%;
-    }
-
-    .footer {
-        top: 65%;
-    }
-
-    .logo {
-        margin-top: 0px;
-    }
-
-    .navbar ul li {
-
-        margin-top: 0em;
-
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------Tablet~Screens--------------------------------- */
-
-
-
-@media screen and (max-width: 800px) {
-
-
-    .Main-banner {
-        height: auto;
-        background-size: 65%;
-    }
-
-    .banner-content {
-        max-width: 60%;
     }
 
     .footer {
@@ -384,21 +344,7 @@ body{
 
     }
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -421,10 +367,10 @@ body{
     }
     .navbarT{
         width: 50%;
-        height: 80vh;
+        height: 100vh;
         background-color: #fefefef9;
         box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.37);
-        position: absolute;
+        position: fixed;
         top:0;
         right: 0;
         display: flex;
@@ -490,6 +436,38 @@ body{
 
 
 
+/* ------------------Tablet~Screens--------------------------------- */
+
+
+
+@media screen and (max-width: 800px) {
+
+
+    .Main-banner {
+        /* height: 50vh; */
+        background-size: 65%;
+    }
+
+    .banner-content {
+        max-width: 60%;
+    }
+
+    .footer {
+        top: 90%;
+    }
+
+    .logo {
+        margin-top: 0px;
+    }
+
+    .navbar ul li {
+
+        margin-top: 0em;
+
+    }
+
+
+}
 
 
 
@@ -502,9 +480,55 @@ body{
 
 
 
-/* ------------------mobile~Screens~320px--------------------------------- */
 
-@media screen and (max-width: 320px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------mobile~Screens~420px--------------------------------- */
+
+@media screen and (max-width: 430px) {
+
+
+    body{
+        overflow-y: scroll;
+    }
+
+    .table-continer{
+        overflow-x: scroll;
+    }
 
     .navbarT{
         width: 100%;
@@ -535,32 +559,24 @@ body{
     .Main-banner {
         background-size: 100%;
         background-position: top;
-        width: 90%;
+        width: 100%;
         height: auto;
-        flex-direction: row;
-        padding: 20px 0;
+        flex-wrap: wrap-reverse;
+        padding: 20px 20px 100px;
     }
 
 
     .banner-image {
         margin-top: 0px;
-        display: none;
-    }
-
-    .footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        position: absolute;
-        top: 95%;
-        font-size: 14px;
+        display: block;
+        height: 250px;
         width: 100%;
     }
 
+
     .banner-content {
-        max-width: 100%;
-        padding: 20px;
+       max-width: 100%;
+    padding: 0px;
     }
 
     .banner-content h1 {
@@ -576,4 +592,19 @@ body{
         width: 100%;
     }
 
+    .footer {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Change this to your footer's background color */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 14px;
+        padding: 10px 0; /* Add padding top and bottom */
+    }
+
+
+    
 }
