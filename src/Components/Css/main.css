@@ -596,13 +596,14 @@ body{
         bottom: 0;
         left: 0;
         width: 100%;
+        height: auto;
         background-color: #333; /* Change this to your footer's background color */
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
         font-size: 14px;
-        padding: 10px 0; /* Add padding top and bottom */
+        padding: 20px; /* Add padding top and bottom */
     }
 
 
